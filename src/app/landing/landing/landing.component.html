@@ -1,1 +1,67 @@
-<p>landing works!</p>
+<div class="wrapper">
+  <div class="container">
+    <div class="overlapbox">
+      <div class="inner-overlap">
+        <div class="overlapdiv" style="padding-top: 5%">
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img id="Image1" src="assets/images/NUPRC-logo.png" />
+            <p class="p-title">
+              Nigerian Upstream Petroleum Regulatory Commission
+            </p>
+          </div>
+          <div style="text-align: center; margin: 5% 4rem 10% 0">
+            <span
+              style="
+                font-size: 20px;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+                text-shadow: 2px;
+              "
+              >(HYDROCARBON VESSEL CLEARANCE - HVeC)</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-container">
+      <div class="btn-container">
+        <a
+          class="login-btn"
+          href="{{ ELPS_URL }}/Account/Login?appId={{ APP_PK }}"
+        >
+          Portal Login
+        </a>
+        <a
+          class="login-btn btn-blue"
+          href="{{ ELPS_URL }}/Account/register?appId={{ APP_PK }}"
+          >Portal Registration</a
+        >
+        <a
+          class="login-btn btn-red"
+          href="{{ ELPS_URL }}/Account/forgotPassword?appId={{ APP_PK }}"
+          >Forgot Password</a
+        >
+        <a
+          class="login-btn btn-purple"
+          href="{{ ELPS_URL }}/permit/verifyPermit?appId={{ APP_PK }}"
+          >Verify Approval</a
+        >
+        <button (click)="onOpenSupport()" class="login-btn btn-light-blue">
+          Contact Support
+        </button>
+        <br />
+        <br />
+
+        <a
+          class="btn-secondary"
+          href="https://clipchamp.com/watch/lihm8MfOyS2"
+          target="_blank"
+          >Click to watch portal user guide</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
